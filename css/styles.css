@@ -1,0 +1,1303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde: #1B5763;
+    --naranja: #634A00;
+    --hover: #1C464C;
+    --blanco: #fff;
+    --fondo: #0F353D;
+    --titulos: #0C7E75;
+}
+
+body {
+    background-image: url(../img/fondoLP.jpg);
+    background-position: top;
+    font-family: 'Akshar', sans-serif;
+}
+
+
+.titulo {
+    height: 30rem;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.titulo h1 {
+    color: var(--blanco);
+    font-size: 10em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px black;
+}
+
+.titulo h2 {
+    color: var(--blanco);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px black;
+}
+
+
+/* ------------ BARRA DE NAVEGACION----------- */
+
+.nav {
+    background-color: var(--verde);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 0.8em;
+    padding-right: 4em;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.nav li {
+    padding: 1em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav a:hover {
+    padding: .8em;
+    border-radius: .8em;
+    background-color: var(--hover);
+    transition: all .6s;
+}
+
+.nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+
+    .nav .mainMenu {
+        height: 100vh;
+        width: 50%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--verde);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    .nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav .openMenu {
+        display: block;
+    }
+
+
+}
+
+
+/* ============SUB MENU============== */
+
+.subMenu {
+    background-color: var(--fondo);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.subMenu li {
+    list-style: none;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: 1em;
+    background-color: var(--verde);
+    min-width: 20em;
+    text-align: center;
+    border-radius: .5em;
+}
+
+.subMenu a {
+    text-decoration: none;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.subMenu li:hover {
+    background-color: var(--hover);
+}
+
+
+/* ------------------CIUDAD DE LAS DIAGONALES--------------------- */
+
+
+#articulo1 {
+    min-height: 15rem;
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto1 p {
+    color: #fff;
+    padding: .5em 5em;
+    line-height: 1.7em;
+}
+
+#articulo1 img {
+    max-height: 10em;
+    padding-right: 6em;
+}
+
+
+/* ------------------CIUDAD PLANIFICADA------------------ */
+
+#articulo2 {
+    height: 30rem;
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5em;
+}
+
+h3 {
+    color: var(--titulos);
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: .5em;
+}
+
+#articulo2 p {
+    color: #fff;
+    line-height: 1.7em;
+}
+
+
+/* ---------------LA CATEDRAL---------------- */
+
+
+#articulo3 {
+    height: 20rem;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5em;
+}
+
+#articulo3 p {
+    color: #fff;
+    line-height: 1.7em;
+}
+
+.catedral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catedral img {
+    max-width: 10em;
+}
+
+.catedral2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1.5em;
+
+}
+
+
+/* --------------ARQUITECTURA-------------- */
+
+
+#articulo4 {
+    height: 20rem;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0em 5em;
+}
+
+h4 {
+    padding: 1em 0;
+    color: var(--hover);
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#articulo4 p {
+    color: #fff;
+    line-height: 1.7em;
+}
+
+.arquitectura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.arquitectura p {
+    padding-right: 2em;
+}
+
+.arquitectura img {
+    max-width: 10em;
+    padding: 0em 1.5em;
+}
+
+/* ---------------- FORM------------------*/
+
+.contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80em;
+    background-color: var(--hover);
+}
+
+.formularioContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fondo);
+    width: 70em;
+    height: 55em;
+    border-radius: 1vw;
+    padding: 2vw;
+}
+
+fieldset {
+    width: 55em;
+    color: var(--titulos);
+    padding: 1vw;
+    margin: 1vw 0;
+    border-radius: 1vw;
+}
+
+fieldset input {
+    margin: 1vw;
+    padding-top: 1vw;
+}
+
+
+.contactanos h1 {
+    font-size: 2em;
+    font-weight: 500;
+    padding-bottom: .5em;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.nombreApellido {
+    padding-top: .5vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nombre {
+    padding-right: .5vh;
+    width: 100%;
+}
+
+.apellido {
+    padding-left: .5vh;
+    width: 100%;
+}
+
+.controls {
+    border: none;
+    width: 100%;
+    background: #fff;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+}
+
+.formularioContacto .boton {
+    width: 54em;
+    background: var(--verde);
+    border: none;
+    padding: 2vh;
+    margin-top: 1vh;
+    color: white;
+    font-size: 2vh;
+    border-radius: 60px;
+}
+
+.formularioContacto .boton:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.checkboxMail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkboxMail p {
+    padding-left: 1em;
+}
+
+textarea {
+    resize: none;
+    padding-top: 1vw;
+}
+
+.radiomayoria {
+    display: flex;
+
+}
+
+
+
+/* --------------------FOOTER------------------ */
+
+.footer {
+    height: 50em;
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h2 {
+    color: var(--verde);
+    padding-bottom: 1em;
+}
+
+.alumnos {
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.footer p {
+    color: white;
+}
+
+.autores {
+    display: flex;
+    padding: .5em 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.eve {
+    margin-right: 2em;
+}
+
+.eve img {
+    border-radius: 1em;
+}
+
+.eve li {
+    list-style: none;
+    color: white;
+}
+
+.eve a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.dario {
+    margin-left: 2em;
+}
+
+.dario li {
+    list-style: none;
+    color: white;
+}
+
+.dario img {
+    border-radius: 1em;
+}
+
+.dario a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.bibliografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bibliografia a {
+    color: white;
+    text-decoration: none;
+}
+
+.bibliografia li {
+    list-style: none;
+    text-align: center;
+}
+
+.bibliografia a:hover {
+    color: var(--verde);
+}
+
+.bibliografia h2 {
+    color: var(--verde);
+    padding-bottom: 1em;
+}
+
+.datos {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datos ul {
+    color: var(--titulos);
+    text-decoration: none;
+}
+
+.datos li {
+    list-style: none;
+    text-align: center;
+}
+
+
+
+/* ----------------- ITINERARIO ------------------ */
+
+.introduccion {
+    height: 10em;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.introduccion p {
+    margin-left: 10em;
+    margin-right: 10em;
+    text-align: center;
+    color: var(--blanco);
+}
+
+/* ------------ */
+
+.anclasItinerario {
+    background-color: var(--fondo);
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anclasItinerario p {
+    margin-bottom: .5em;
+    font-size: 2em;
+    color: var(--titulos);
+}
+
+.anclasli {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.anclasli li {
+    list-style: none;
+    margin: .5em .5em;
+    padding: 1em;
+    background-color: var(--verde);
+    min-width: 10em;
+    text-align: center;
+    border-radius: .5em;
+}
+
+.anclasli a {
+    text-decoration: none;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.anclasli li:hover {
+    background-color: var(--hover);
+}
+
+
+/* ------ */
+
+.banner {
+    height: 8em;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner p {
+    margin-left: 10em;
+    margin-right: 10em;
+    color: var(--blanco);
+}
+
+.texto3 p {
+    padding: 0 5em;
+    line-height: 1.7em;
+    color: var(--blanco);
+}
+
+.textoFoto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textoFoto img {
+    max-width: 15em;
+    padding-right: 2em;
+}
+
+.estiloParrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.paseoDelBosque {
+    height: 40vh;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.museo {
+    height: 40vh;
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.planetario {
+    height: 40vh;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.estadio {
+    height: 30vh;
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.casaCuru {
+    height: 35vh;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.estadioUno {
+    height: 50vh;
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.ciudadNinios {
+    height: 40vh;
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.estadioUnico {
+    height: 80vh;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.estiloParrafo iframe {
+    padding-top: 2em;
+    border: 0;
+}
+
+
+
+/*---------- noticias ---------*/
+
+
+.eventosenlacity {
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 220vh;
+}
+
+
+.card {
+    background-color: #fff;
+    height: 42em;
+    width: 25em;
+    margin: 2em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.datosEvento {
+    margin: 2em;
+    text-align: center;
+}
+
+.eventosenlacity h2 {
+    color: var(--titulos);
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+
+
+.eventos {
+    display: flex;
+    padding: .3em 3em;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardUl {
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardUl img {
+    border-radius: 1em;
+    max-height: 14em;
+    margin-bottom: 2em;
+}
+
+.cardUl li {
+    list-style: none;
+    color: var(--verde);
+}
+
+.cardUl :nth-child(2) {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+
+
+/* ------------ GRACIAS ----------- */
+
+.gracias {
+    margin-top: 5em;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: var(--fondo);
+    padding: 2em;
+}
+
+.gracias h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+    padding-bottom: .5em;
+    color: var(--blanco);
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--verde);
+    max-height: 100em;
+    min-height: 40em;
+}
+
+.articulo h2 {
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+    padding: .5em;
+    color: var(--blanco);
+}
+
+.articulo li {
+    list-style: none;
+}
+
+.articulo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.articulo iframe {
+    width: 300px;
+    height: 300px;
+    padding-top: 2em;
+    border: 0;
+}
+
+.articulo aside {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ----------------GALERIA-------------- */
+
+
+.mainGaleria {
+    max-height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mainGaleria h1 {
+    margin-bottom: .5em;
+    margin-top: 1em;
+    color: #fff;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto {
+    background-color: var(--verde);
+    height: 18em;
+    width: 18em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    overflow: hidden;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.foto:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.foto img {
+    border-radius: 1em;
+    max-height: 15em;
+    min-height: 10em;
+}
+
+
+/* ========================RESPONSIVE========================== */
+
+
+/*LAPTOP*/
+
+
+@media (max-width: 1440px) {
+
+
+    /* ------->Noticias------- */
+
+    .eventosenlacity {
+        height: 160rem;
+
+    }
+
+}
+
+/*TABLET*/
+
+@media (max-width: 768px) {
+
+    /* ------->Index------- */
+
+    .titulo {
+        height: 20rem;
+    }
+
+    .titulo h1 {
+        font-size: 4em;
+    }
+
+
+    .subMenu {
+        flex-direction: column;
+        height: 20rem;
+    }
+
+    .subMenu ul {
+        padding: 0;
+    }
+
+    #articulo1 {
+        flex-direction: column;
+        align-items: center;
+        height: 35em;
+    }
+
+    #articulo1 img {
+        padding-right: 0;
+        padding-top: 1em;
+    }
+
+    #articulo2 {
+        height: 48em;
+        padding: 0 4.5em;
+    }
+
+    #articulo3 {
+        height: 40em;
+    }
+
+    .catedral {
+        flex-direction: column;
+    }
+
+    .catedral2 {
+        padding: 0 0;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    #articulo4 {
+        flex-direction: column;
+        height: 35em;
+        align-items: center;
+    }
+
+    .arquitectura {
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .dario {
+        margin-left: 1em;
+    }
+
+    .eve {
+        margin-right: 1em;
+    }
+
+    /* ------->Noticias------- */
+
+
+
+    .eventosenlacity {
+        height: 270rem;
+        justify-content: flex-start;
+    }
+
+    .eventosenlacity h2 {
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .eventos {
+        padding: 0 0;
+    }
+
+    .card {
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+
+
+    /* ------->Itinerario------- */
+
+    .paseoDelBosque {
+        height: 45em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textoFoto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textoFoto img {
+        max-width: 15em;
+        padding-top: 2em;
+    }
+
+    .museo {
+        height: 45em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .planetario {
+        height: 45em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .estadio {
+        height: 45em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .casaCuru {
+        height: 40em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .estadioUno {
+        height: 45em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .ciudadNinios {
+        height: 45em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .estadioUnico {
+        height: 55em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .anclasItinerario {
+        height: 22em;
+    }
+
+    .introduccion p {
+        margin: 0 2em;
+    }
+
+    .banner p {
+        margin: 0 4em;
+    }
+
+    /* ------->Form------- */
+
+    .contactanos {
+        height: 60em;
+    }
+
+    .formularioContacto {
+        width: 35em;
+    }
+
+    fieldset {
+        width: 30em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formularioContacto .boton {
+        width: 25em;
+    }
+
+    .controls {
+        width: 90%;
+    }
+}
+
+
+
+/*MOBILE BIG*/
+
+@media (max-width: 500px) {
+
+
+    /* ------->Index------- */
+
+
+    .autores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dario {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .eve {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .footer {
+        height: 60em;
+    }
+
+
+    #articulo1 {
+        height: 45em;
+        padding: 0em 0em;
+    }
+
+    .texto1 p {
+        padding: 0em 2em;
+    }
+
+    #articulo2 {
+        height: 60em;
+        padding: 0em 2em;
+    }
+
+    #articulo3 {
+        height: 50em;
+        padding: 0em 2em;
+    }
+
+    #articulo4 {
+        height: 45em;
+        padding: 0em 2em;
+    }
+
+    .arquitectura p {
+        padding-right: 0;
+    }
+
+    /* ------->Itinerario------- */
+
+    .estiloParrafo iframe {
+        max-height: 25%;
+        max-width: 50%;
+        padding-top: 2em;
+        border: 0;
+    }
+
+    .paseoDelBosque {
+        height: 55em;
+    }
+
+    .museo {
+        height: 55em;
+    }
+
+
+    .planetario {
+        height: 55em;
+    }
+
+    .estadio {
+        height: 55em;
+    }
+
+    .casaCuru {
+        height: 50em;
+    }
+
+
+    .estadioUno {
+        height: 70em;
+    }
+
+    .ciudadNinios {
+        height: 55em;
+    }
+
+    .estadioUnico {
+        height: 65em;
+    }
+
+    .banner p {
+        margin: 0 2em;
+    }
+
+    .texto3 p {
+        padding: 0 2em;
+    }
+
+    .anclasli {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .anclasItinerario {
+        height: 40em;
+    }
+
+    .estiloParrafo h3 {
+        font-size: 1.5em;
+    }
+
+    /* ------->Form------- */
+
+    .contactanos {
+        height: 60em;
+    }
+
+    .formularioContacto {
+        width: 23em;
+    }
+
+    fieldset {
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formularioContacto .boton {
+        width: 15em;
+    }
+
+    .controls {
+        width: 80%;
+    }
+
+}
+
+/*MOBILE SMALL*/
+
+@media (max-width: 375px) {
+
+    /* ------->Index------- */
+
+
+    #articulo2 {
+        height: 70em;
+    }
+
+    /* ------->Noticias------- */
+
+    .card {
+        width: 21em;
+    }
+
+    /* ------->Itinerario------- */
+
+    .introduccion {
+        height: 15em;
+    }
+
+
+}

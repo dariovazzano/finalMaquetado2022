@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Ciudad, argentina, La Plata, Buenos Aires, diagonales, catedral" />
+    <meta name="description" content="Contactanos para conocer mas sobre la Ciudad de La Plata" />
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+
+    <nav class="nav">
+
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../paginas/noticias.html">Noticias</a></li>
+            <li><a href="../paginas/itinerario.html">Itinerario</a></li>
+            <li><a href="../paginas/contactanos.html">Contacto</a></li>
+            <li><a href="../paginas/galeria.html">Galeria</a></li>
+            <li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="contactanos">
+        <form class="formularioContacto" action="./gracias.html" method="GET">
+            <h1>CONTACTO</h1>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="nombreApellido">
+                    <div class="nombre">
+                        <input class="controls" type="text" name="Nombre" placeholder="Nombre" required />
+                    </div>
+                    <div class="apellido">
+                        <input class="controls" type="text" name="Apellido" placeholder="Apellido" required />
+                    </div>
+                </div>
+                <div>
+                    <p>Tu Foto</p>
+                    <input type="file" name="archivo" accept="image/jpeg, image/png" />
+                </div>
+                <input class="controls" type="email" name="Mail" placeholder="Mail" required />
+                <div>
+                    <p>Soy mayor de 18</p>
+                    <div class="radiomayoria">
+
+                        <div>
+                            <input id="mayor" type="radio" name="mayoriadeEdad" value="mayordeEdad" />
+                            <label for="mayor">si</label>
+                        </div>
+                        <div>
+                            <input id="menor" type="radio" name="mayoriadeEdad" value="menordeEdad" />
+                            <label for="menor">no</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Consulta</legend>
+                <div>
+                    <p>En cuál de las siguientes áreas te gustaria recibir informacion</p>
+
+                    <label>
+                        <input type="checkbox" name="ht" value="ht" /> Hoteles y Alojamiento
+                    </label>
+                    <label>
+                        <input type="checkbox" name="pf" value="pf" /> Lugares Pet Friendly
+                    </label>
+                    <label>
+                        <input type="checkbox" name="al" value="al" /> Salidas al Aire Libre
+                    </label>
+                    <label>
+                        <input type="checkbox" name="cs" value="cs" /> Conciertos y Shows
+                    </label>
+                </div>
+                <textarea class="controls" rows="5" cols="15" name="consulta" placeholder="Consulta"></textarea>
+            </fieldset>
+
+            <div class="checkboxMail">
+                <input type="checkbox" name="deacuerdo" id="siMail" />
+                <label for="siMail">Acepto recibir mails informativos</label>
+            </div>
+            <input class="boton" type="submit" value="ENVIAR" />
+        </form>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="alumnos">
+            <h2>Alumnos</h2>
+            <div class="autores">
+                <ul class="eve">
+                    <li> <img src="../img/eve.jpg" alt="Alumna de la escuela Da vinci sonriendo con remera negra" />
+                    </li>
+                    <li>Evelyn S. Manzo</li>
+                    <li>29 años</li>
+                    <li><a href="mailto:evelyn.manzo@davinci.edu.ar">Click para enviar email a Evelyn</a></li>
+                </ul>
+                <ul class="dario">
+                    <li> <img src="../img/dario.jpg" alt="Alumno de la escuela Da vinci sonriendo con remera rosa" />
+                    </li>
+                    <li>Dario Vazzano</li>
+                    <li>24 años</li>
+                    <li><a href="mailto:dario.vazzano@davinci.edu.ar">Click para enviar email a Darío</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bibliografia">
+            <h2>Bibliografía</h2>
+            <ul>
+                <li>
+                    <a href="https://revistamito.com/la-plata-una-cuidad-planificada/" target="blank">Revista Mito</a>
+                </li>
+                <li>
+                    <a href="https://turismo.laplata.gob.ar/ematur/" target="blank">Turismo - La plata</a>
+                </li>
+                <li>
+                    <a href="http://www.catedraldelaplata.com/catedral/ubicacion/" target="blank">Catedral de La
+                        Plata</a>
+                </li>
+            </ul>
+        </div>
+        <div class="datos">
+            <ul>
+                <li>Maquetado y Desarrollo Web</li>
+                <li>Escuela de Arte multimedial "Da Vinci"</li>
+                <li>Primer Cuatrimestre - 2022</li>
+                <li>Docente: Mabel García</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+
+
+</body>
+
+</html>
